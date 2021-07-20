@@ -1,0 +1,84 @@
+:root{
+    --dark-pink : #3e064e;
+    --faint-pink: #e9a7f3;
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+.section{
+
+    width: 100%;
+    max-width: 500px;
+    min-height: 200px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: var(--dark-pink);
+}
+h1, p{
+    color: white;
+}
+.label{
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 0.5rem;
+    color: var(--faint-pink);
+}
+
+
+input{
+    width: 100%;
+    padding: 1rem;
+    height: 50px;
+    display: block;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    display: block;
+    font-size: 1rem;
+    border: none;
+    margin: 1rem auto 0;
+    background-color:var(--faint-pink);
+    color: var(--dark-pink);
+    font-weight: bold;
+}
+
+.cash-input{
+    display: none;
+}
+.change-returned{
+    display: none;
+}
+.error-Message{
+    padding-top: 1rem;
+    color:white;
+}
+#output{
+    margin: 1rem 0;    
+}
+
+#output table, th, td{
+    padding: 0.2rem;
+    color: var(--dark-pink);
+    background-color:var(--faint-pink);
+    border: 2px solid var(--dark-pink) ;
+    border-collapse: collapse;
+}
+.notes{
+    background-color:white;
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+th,td{
+    word-wrap: break-word;
+}

@@ -7,6 +7,9 @@
     <title>Cash register manager</title>
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+
+    <link rel="stylesheet" href="styles.css">
+
   </head>
   <body>
        <section class="section">
@@ -14,16 +17,16 @@
         <p>Enter the bill amount and cash to know minimum number of notes to return.</p>
         <div>
             <div class="label">Bill Amount:</div>
-            <input type="number" id="bill-Amount" > 
+            <input type="number" id="bill-amount" > 
             <button id="next-button">Next</button> 
         </div>
 
         <div class="cash-input">
             <div class="label">Cash Given:</div>
-            <input type="number" id="cashGiven" >
+            <input type="number" id="cash-given" >
             <button id="check-button">Check</button> 
         </div>
-        <div class="error-messsage"></div>
+        <div class="error-message"></div>
 
         <div class="change-returned">
             <div class="label">Return Change:</div>
@@ -54,5 +57,7 @@
         </div>
 
     </section>
+
+     <script src="index.js"></script>
   </body>
 </html>
