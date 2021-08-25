@@ -1,84 +1,92 @@
-:root{
-    --dark-pink : #3e064e;
-    --faint-pink: #e9a7f3;
+:root {
+  --dark-pink: #0842ff9f;
+  --faint-pink: #f8f8f8;
 }
-*{
-    font-family: 'Open Sans', sans-serif;
-    box-sizing: border-box;
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
 }
-body{
-    margin: 0;
-}
-
-.section{
-
-    width: 100%;
-    max-width: 500px;
-    min-height: 200px;
-    margin: auto;
-    padding: 2rem 1rem;
-    text-align: center;
-    background-color: var(--dark-pink);
-}
-h1, p{
-    color: white;
-}
-.label{
-    font-size: 1.3rem;
-    padding: 1.5rem 1rem 0.5rem;
-    color: var(--faint-pink);
+body {
+  margin: 0;
+  height: 100%;
+  background-image: url(./giphy.gif);
+  /* Center and scale the image nicely */
+  background-position: inherit;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-
-input{
-    width: 100%;
-    padding: 1rem;
-    height: 50px;
-    display: block;
+.section {
+  width: 100%;
+  max-width: 500px;
+  min-height: 200px;
+  margin: auto;
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: var(--dark-pink);
+}
+h1,
+p {
+  color: rgb(255, 255, 255);
+}
+.label {
+  font-size: 1.3rem;
+  padding: 1.5rem 1rem 0.5rem;
+  color: var(--faint-pink);
 }
 
-button{
-    padding: 0.5rem 1rem;
-    display: block;
-    font-size: 1rem;
-    border: none;
-    margin: 1rem auto 0;
-    background-color:var(--faint-pink);
-    color: var(--dark-pink);
-    font-weight: bold;
+input {
+  width: 100%;
+  padding: 1rem;
+  height: 50px;
+  display: block;
 }
 
-.cash-input{
-    display: none;
-}
-.change-returned{
-    display: none;
-}
-.error-Message{
-    padding-top: 1rem;
-    color:white;
-}
-#output{
-    margin: 1rem 0;    
+button {
+  padding: 0.5rem 1rem;
+  display: block;
+  font-size: 1rem;
+  border: none;
+  margin: 1rem auto 0;
+  background-color: var(--faint-pink);
+  color: var(--dark-pink);
+  font-weight: bold;
 }
 
-#output table, th, td{
-    padding: 0.2rem;
-    color: var(--dark-pink);
-    background-color:var(--faint-pink);
-    border: 2px solid var(--dark-pink) ;
-    border-collapse: collapse;
+.cash-input {
+  display: none;
 }
-.notes{
-    background-color:white;
-    font-weight: bold;
+.change-returned {
+  display: none;
 }
-
-table{
-    width: 100%;
-    table-layout: fixed;
+.error-Message {
+  padding-top: 1rem;
+  color: white;
+}
+#output {
+  margin: 1rem 0;
 }
 
-th,td{
-    word-wrap: break-word;
+#output table,
+th,
+td {
+  padding: 0.2rem;
+  color: var(--dark-pink);
+  background-color: var(--faint-pink);
+  border: 2px solid var(--dark-pink);
+  border-collapse: collapse;
+}
+.notes {
+  background-color: white;
+  font-weight: bold;
+}
+
+table {
+  width: 100%;
+  table-layout: fixed;
+}
+
+th,
+td {
+  word-wrap: break-word;
 }
