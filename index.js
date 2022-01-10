@@ -58,7 +58,7 @@ checkButton.addEventListener('click', ()=>{
 })
 
 //to calculate no. of notes
-function calculateNotes(bill, cash){
+const calculateNotes = (bill, cash) => {
     let returnAmount = cash-bill;
     
     if(returnAmount<1){
@@ -74,7 +74,7 @@ function calculateNotes(bill, cash){
 }
 
 //compare with currency and post the no. of notes on screen
-function compare(remainder, noteAmount, index){
+const compare = (remainder, noteAmount, index) => {
 
     if(remainder >= noteAmount){
         let notes = Math.floor(remainder/noteAmount);
@@ -85,18 +85,18 @@ function compare(remainder, noteAmount, index){
 }
 
 //if check button clicked without refreshing the page, clear the no of notes values on the screen
-function clearNotes(){
+const clearNotes = () => {
     for(let notes of Notes){
         notes.innerText = "";
     }
 }
 
-function errorShow(text){
+const errorShow = text => {
     errorDiv.style.display = "block";
     errorDiv.innerText= text;
     changeReturnedDiv.style.display = "none";
 }
 
-function errorHide(){
+const errorHide = () => {
     errorDiv.style.display = "none";
 }
